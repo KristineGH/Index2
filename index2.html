@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Modifying an image border </title>
+
+    <script>
+        function setBorderWidth(width){
+            document.getElementById("image1").style.borderWidth = width + "px" ;
+        }
+    </script>
+
+</head>
+<body>
+    <p>
+        <img src="./img/fb_icon.png" id="image1" style="border: 5px black;" width="150" height="150" alt="Border Test">
+    </p>
+
+
+    <input type="button" value="Make border 20px " onclick="setBorderWidth(20) ; ">
+    <input type="button" value="Make border 5px " onclick="setBorderWidth(5) ; ">
+
+
+</body>
+</html>
